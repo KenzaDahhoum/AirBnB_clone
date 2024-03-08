@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 from models.base_model import BaseModel
+from models.user import User
 from models import storage
 import cmd
 
 class HBNBCommand(cmd.Cmd):
     prompt = ' (hbnb) '
-    classes = {"BaseModel": BaseModel}
+    classes = {"BaseModel": BaseModel, "User": User}
     def emptyline(self):
         """Do nothing on an empty line."""
         pass
