@@ -2,6 +2,8 @@ import unittest
 from models.base_model import BaseModel
 from datetime import datetime
 from datetime import datetime, timedelta
+""" test for baseModel class """
+
 
 class TestBaseModel(unittest.TestCase):
 
@@ -12,6 +14,7 @@ class TestBaseModel(unittest.TestCase):
         self.assertNotEqual(instance1.id, instance2.id)
 
     def test_datetime_assignment(self):
+        """ datetime assignemet correctly  """
         instance = BaseModel()
         delta = instance.updated_at - instance.created_at
         self.assertTrue(delta < timedelta(seconds=1))
@@ -37,4 +40,3 @@ class TestBaseModel(unittest.TestCase):
         old_updated_at = instance.updated_at
         instance.save()
         self.assertNotEqual(old_updated_at, instance.updated_at)
-
