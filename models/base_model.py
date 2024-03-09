@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 This module defines the BaseModel class which serves as the base class
 for all models in our application.
