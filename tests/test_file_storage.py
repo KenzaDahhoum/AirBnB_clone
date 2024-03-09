@@ -2,6 +2,8 @@ import unittest
 import os
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
+""" test file for storage """
+
 
 class TestFileStorage(unittest.TestCase):
 
@@ -49,4 +51,3 @@ class TestFileStorage(unittest.TestCase):
             os.remove('file.json')
         except FileNotFoundError:
             pass
-

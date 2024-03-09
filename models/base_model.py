@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 
+import uuid
+from datetime import datetime
+from . import storage
 """
 This module defines the BaseModel class which serves as the base class
 for all models in our application.
 """
-
-import uuid
-from datetime import datetime
-from . import storage
 
 
 class BaseModel:

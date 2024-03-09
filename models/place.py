@@ -1,7 +1,15 @@
 #!/usr/bin/python3
+"""
+This module defines the Place class that inherits from BaseModel.
+"""
+
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
+    """
+    Place class for storing place-specific information.
+    """
     city_id = ""
     user_id = ""
     name = ""
