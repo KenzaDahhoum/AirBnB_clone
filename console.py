@@ -9,6 +9,7 @@ from models.amenity import Amenity
 from models.review import Review
 from models import storage
 import cmd
+""" docummentation for cmd hbnbcommand """
 
 
 class HBNBCommand(cmd.Cmd):
