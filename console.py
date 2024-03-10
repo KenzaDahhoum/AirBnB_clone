@@ -13,7 +13,7 @@ import cmd
 
 class HBNBCommand(cmd.Cmd):
     """Entry point of the command interpreter."""
-    prompt = '(hbnb) '
+    prompt = '(hbnb)'
     classes = {
         "BaseModel": BaseModel,
         "User": User,
