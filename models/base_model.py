@@ -2,7 +2,8 @@
 
 import uuid
 from datetime import datetime
-from . import storage
+from models import storage
+
 """
 This module defines the BaseModel class which serves as the base class
 for all models in our application.
