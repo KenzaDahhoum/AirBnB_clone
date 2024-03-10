@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 from models.base_model import BaseModel
 from models.user import User
 from models.place import Place
@@ -55,6 +56,7 @@ class HBNBCommand(cmd.Cmd):
             print(instance.id)
         else:
             print("** class doesn't exist **")
+
     def help_create(self):
         """ Help documentation for create command. """
         print("Creates a new instance of BaseModel and prints the id.")
@@ -78,6 +80,7 @@ class HBNBCommand(cmd.Cmd):
             print(all_objects[key])
         else:
             print("** no instance found **")
+
     def help_show(self):
         """ Help docummentation for show command """
         print("Prints the string representation of an instance.")
@@ -102,6 +105,7 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
         else:
             print("** no instance found **")
+
     def help_destroy(self):
         """ Help docummentation for destroy command """
         print("Deletes an instance based on the class name and id.")
@@ -121,6 +125,7 @@ class HBNBCommand(cmd.Cmd):
             for obj in all_objects.values():
                 result.append(str(obj))
         print(result)
+
     def help_all(self):
         """ Help docummentation for all command """
         print("Prints all string representation of all instances.")
@@ -147,9 +152,11 @@ class HBNBCommand(cmd.Cmd):
             all_objects[key].save()
         else:
             print("** no instance found **")
+
     def help_update(self):
         """ Help documentaton for update command """
         print("Updates an instance based on the class name and id.")
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
