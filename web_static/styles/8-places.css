@@ -1,0 +1,10 @@
+.price_by_night{
+color: #FF5A5F;
+border: 4px round #FF5AFF;
+min-width: 60px;
+height: 60px;
+font-size: 30px;
+align-items: center;
+display: flex;
+
+}
